@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Webpack static website</title>
+  <%= require('./components/_htmlResources') %>
+</head>
+<body>
+  <%= require('./components/_htmlHeader') %>
+
+  <div class="photo"></div>
+  <div class="photo2"></div>
+
+  <img src="<%= require('../publicPath').img %>1.png">
+  <img src="<%= require('../publicPath').img %>2.png">
+
+  <link rel="stylesheet" href="<%= require('../publicPath').css %>vendor.css">
+  <script src="<%= require('../publicPath').js %>main.js"></script>
+</body>
+</html>

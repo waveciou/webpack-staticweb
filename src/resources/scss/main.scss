@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "./utils/_utils.scss";
+
+.photo {
+  width: 200px;
+  height: 200px;
+  background: url('../img/1.png') no-repeat center/contain;
+}
+
+.photo2 {
+  width: 200px;
+  height: 200px;
+  background: url('../img/icon/2.png') no-repeat center/contain;
+}
