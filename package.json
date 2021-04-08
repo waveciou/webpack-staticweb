@@ -1,5 +1,5 @@
 {
-  "name": "webpack-staticweb",
+  "name": "webpack-template",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waveciou/webpack-staticweb.git"
+    "url": "git+https://github.com/waveciou/webpack-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waveciou/webpack-staticweb/issues"
+    "url": "https://github.com/waveciou/webpack-template/issues"
   },
-  "homepage": "https://github.com/waveciou/webpack-staticweb#readme",
+  "homepage": "https://github.com/waveciou/webpack-template#readme",
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",

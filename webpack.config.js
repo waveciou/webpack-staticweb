@@ -34,7 +34,7 @@ module.exports = {
     filename: './resources/js/[name].js',
     path: path.resolve(__dirname, './dist')
   },
-	target: ['web', 'es5'],
+  target: ['web', 'es5'],
   module: {
     rules: [
       {
