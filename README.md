@@ -1,6 +1,6 @@
 # Webpack 使用筆記
 
-我個人在使用 webpack 上所做的筆記以及專案模板。
+我個人在使用 webpack 時所做的筆記以及常用的靜態網頁專案模板。
 
 ## 專案檔案架構配置
 
@@ -52,7 +52,7 @@ $ npm install webpack webpack-cli --save-dev
 $ npm install cross-env --save-dev
 ```
 
-`cross-env` 可以幫助作業系統認識 node.js 的環境變數，環境變數分成 **development（開發版本）** 與 **production（發布版本）** ，在 JavaScript 裡面可以使用 `process.env.NODE_ENV` 來取得環境變數參數。
+`cross-env` 可以幫助作業系統認識 node.js 的環境變數，環境變數分成 **development（開發版本）** 與 **production（發布版本）**，在 JavaScript 裡面可以使用 `process.env.NODE_ENV` 來取得環境變數參數。
 
 ```json
 process.env.NODE_ENV; // development or production
@@ -86,7 +86,7 @@ $ npm install file-loader --save-dev
 ### 6、安裝 CSS Loader、SASS Loader 與其相關套件
 
 - **CSS Loader**：處理與編譯 CSS。
-- **Sass Loader** 、 **Node Sass**：編譯 SASS / CSS。
+- **Sass Loader**、**Node Sass**：編譯 SASS / CSS。
 - **Mini CSS Extract Plugin**：輸出 CSS 檔案。
 
 ```sh
@@ -189,9 +189,9 @@ module.exports = {
     filename: './resources/js/[name].js',
     path: path.resolve(__dirname, './dist')
   },
-	plugins: [
-		new CleanWebpackPlugin()
-	]
+  plugins: [
+    new CleanWebpackPlugin()
+  ]
 };
 ```
 
@@ -302,7 +302,7 @@ plugins: [
 
 ### 設定圖片輸出
 
-圖片的部分會使用 `file-loader` 做輸出，會從 `./src/resources/img` 輸出至 `./dist/resources/img` ，由於圖片也會在 CSS 裡面的 url 被讀取到，所以這邊的設定會有點複雜。
+圖片的部分會使用 `file-loader` 做輸出，會從 `./src/resources/img` 輸出至 `./dist/resources/img`，由於圖片也會在 CSS 裡面的 url 被讀取到，所以這邊的設定會有點複雜。
 
 ```js
 module: {
